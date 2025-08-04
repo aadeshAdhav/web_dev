@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vijeera Academy – Talent Transformation & Executive Training</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="heading">
+      <h1 id="name">Vijeera HR</h1>
+      <h3 id="sub-name">Professional HR Academy</h3>
+    </div>
+
+    <div class="navbar">
+      <a href="#" class="active">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#">HR Course</a>
+      <a href="#">Corporate Training</a>
+      <a href="#">Training Certification</a>
+      <a href="#">Contact Us</a>
+    </div>
+
+    <!-- Image Slider with text -->
+    <div class="slider">
+      <div class="slides" id="slides">
+        <div class="slide">
+          <img src="./image/pexels-fauxels-3184325 (1).jpg" alt="Slide 1" />
+          <div class="slide-text">
+            <h1>Best HR Professional</h1>
+            <h1>Training Services</h1>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="./image/pexels-fauxels-3182772.jpg" alt="Slide 2" />
+          <div class="slide-text">
+            <h1>Best HR Professional</h1>
+            <h1>Training Services</h1>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="./image/pexels-fauxels-3183179.jpg" alt="Slide 3" />
+          <div class="slide-text">
+            <h1>Best HR Professional</h1>
+            <h1>Training Services</h1>
+          </div>
+        </div>
+      </div>
+      <button class="nav-btn prev" onclick="prevSlide()">❮</button>
+      <button class="nav-btn next" onclick="nextSlide()">❯</button>
+    </div>
+
+    <!-- about us -->
+    <section class="about-section" id="about">
+      <div class="about-container">
+        <h2 class="section-heading">About</h2>
+
+        <div class="card">
+          <h3 class="card-title">Our Story</h3>
+          <p>
+            Vijeera is a leading talent transformation and reskilling
+            organization, known for enabling long-lasting business and cultural
+            impact. An ISO 9001:2015 certified company, our mission is to
+            enhance productivity and leadership across organizations.
+          </p>
+          <p>
+            We deliver 360° training—from entry-level to senior
+            management—through engaging workshops, corporate training, and
+            coaching programs that foster real growth and results.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">Vision</h3>
+          <p>Impacting lives by creating limitless opportunities.</p>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">Values</h3>
+          <ul>
+            <li>Transparent</li>
+            <li>Humble</li>
+            <li>Resilient</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">What We Do</h3>
+          <p>
+            Vijeera Reskilling Institute is committed to skill development and
+            youth employability. Hundreds of professionals elevate their careers
+            annually through our hands-on certification programs led by seasoned
+            industry experts.
+          </p>
+          <p>
+            Through our strategic partnership with the Times Group, we deliver
+            executive education via top-tier management institutes.
+          </p>
+          <p>
+            Our consulting services cover Sales, Marketing, Business
+            Development, Inside Sales, and Sales Excellence—guided by experts
+            with real-world experience across sectors.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">Our Focus Areas</h3>
+          <ul>
+            <li>Corporate Training</li>
+            <li>One-on-One & Team Coaching</li>
+            <li>Sales & Leadership Consulting</li>
+            <li>Certification Programs for Young Professionals</li>
+            <li>Executive Education from Premium Institutes</li>
+          </ul>
+          <p>
+            Our training programs and alumni are celebrated by respected
+            organizations and industry leaders alike.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- hr course -->
+    <!-- HR Course Section -->
+    <section class="course-section">
+      <div class="course-hero">
+        <img
+          src="./image/pexels-timur-weber-8560024.jpg"
+          alt="HR Training Session"
+        />
+
+        <div class="course-text">
+          <h2>HR FRESHER COURSE</h2>
+          <p class="highlight-text">
+            <span>Best HR Training</span><br />
+            Daily + Weekend <br />
+            Online + Offline
+          </p>
+          <button id="enrollBtn">Join Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Form -->
+    <!-- Modal Form -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Enroll in HR Course</h3>
+        <form id="enrollForm">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" required />
+
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" required />
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" pattern="[0-9]{10}" required />
+
+          <label for="email">Email ID</label>
+          <input type="email" id="email" required />
+
+          <label for="education">Education</label>
+          <input type="text" id="education" required />
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- hr programm -->
+    <section class="programme-objective">
+      <h2 class="title">PROGRAMME OBJECTIVE</h2>
+      <p class="subtitle">
+        To enable HR Practical Training and Job Focused knowledge in HR Domain.
+      </p>
+
+      <div class="objective-grid">
+        <div class="objective-col">
+          <div class="objective-item">
+            <div class="icon"><i class="fas fa-certificate"></i></div>
+            <h4>ISO 9001:2015 Certification</h4>
+          </div>
+          <div class="objective-item">
+            <div class="icon"><i class="fas fa-users"></i></div>
+            <h4>Experienced Faculty</h4>
+          </div>
+          <div class="objective-item">
+            <div class="icon"><i class="fas fa-book-open"></i></div>
+            <h4>Study Material</h4>
+          </div>
+        </div>
+        <div class="objective-col">
+          <div class="objective-item">
+            <div class="icon"><i class="fas fa-chalkboard-teacher"></i></div>
+            <h4>Workshops / Webinars</h4>
+          </div>
+          <div class="objective-item">
+            <div class="icon"><i class="fas fa-briefcase"></i></div>
+            <h4>100% Placement Assistance</h4>
+          </div>
+          <div class="objective-item">
+            <div class="icon"><i class="fas fa-user-check"></i></div>
+            <h4>Job Readiness</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hr-programme">
+      <h2 class="title">HR GENERALIST PROGRAMME</h2>
+      <div class="objective-grid gap-class">
+        <div class="tp-card color-class">
+          <h3>Talent Acquisition</h3>
+          <img src="./image/talent.jpg" />
+          <div class="border-sample"></div>
+          <ul>
+            <li>Recruitment & Selection</li>
+            <li>Portal Training</li>
+            <li>Personality & Psychometric Test</li>
+            <li>Effective Onboarding</li>
+            <li>Competency Based Interviews</li>
+          </ul>
+        </div>
+        <div class="tp-card color-class">
+          <h3>Payroll & Statutory Compliance</h3>
+          <img src="./image/payroll.jpg" />
+          <div class="border-sample"></div>
+          <ul>
+            <li>Statutory Compliance</li>
+            <li>Practical Advanced Excel</li>
+            <li>System Training</li>
+            <li>Labour Law</li>
+            <li>Payroll Input</li>
+          </ul>
+        </div>
+        <div class="tp-card color-class">
+          <h3>Strategic HRM</h3>
+          <img src="./image/hrm.jpg" />
+          <div class="border-sample"></div>
+          <ul>
+            <li>Performance Management System</li>
+            <li>Training & Development</li>
+            <li>HR Policies</li>
+            <li>HR Business Partner</li>
+            <li>Basics of HR Analytics</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="hr-programme">
+      <h2 class="title">HR ANALYTICS PROGRAMME</h2>
+      <div class="objective-grid gap-class">
+        <div class="tp-card color-class">
+          <h3>HR Analytics - Practitioner</h3>
+          <img src="./image/HR Analytics - Practitioner.jpg" />
+          <div class="border-sample"></div>
+          <ul>
+            <li>Tool Used: Excel</li>
+            <li>Introduction to Analytics</li>
+            <li>Key HR Matrices</li>
+            <li>Statistical Modelling</li>
+            <li>Understanding the Business Problem</li>
+            <li>Data Discovery and Collection</li>
+            <li>Data Preparation</li>
+            <li>Hypothesis testing</li>
+            <li>Correlation, correlation coefficient and linear regression</li>
+            <li>15 Statistical Tools</li>
+            <li>25 Case Studies</li>
+            <li>2 Projects</li>
+          </ul>
+        </div>
+        <div class="tp-card color-class">
+          <h3>HR Analytics - Advanced</h3>
+          <img src="./image/HRHR Analytics - Advanced.jpg" />
+          <div class="border-sample"></div>
+          <ul>
+            <li>Tools Used: Excel, Python and Tableau</li>
+            <li>Introduction to Python and Tableau</li>
+            <li>Types of Data, Data Directory and Validate Data</li>
+            <li>Statistics – Univariate (Numerical and Categorical)</li>
+            <li>Data Cleaning</li>
+            <li>Statistics – bi-variate (Numerical and Categorical)</li>
+            <li>Hypothesis Testing</li>
+            <li>Feature Engineering – Variable Creation and Transformation</li>
+            <li>5 Statistical Tools</li>
+            <li>10 Case Studies</li>
+            <li>2 Projects</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- admission -->
+    <section class="admission">
+      <h2>ADMISSIONS OPEN</h2>
+      <h3>HR GENERALIST TRAINING PROGRAMME</h3>
+      <div class="tp-div">
+        <div class="icon"><i class="fa-solid fa-rocket"></i></div>
+        <div class="tp-content">
+          <h4>Next Batch For HR Generalist Online Training</h4>
+          <p>
+            Start from 10th Dec 2025 | Sat: 6 PM to 9 PM and Sun: 2 PM to 5 PM
+          </p>
+        </div>
+      </div>
+      <h3>HR ANALYTICS</h3>
+      <div class="tp-div">
+        <div class="icon"><i class="fa-solid fa-rocket"></i></div>
+        <div class="tp-content">
+          <h4>Next Batch For HR Analytics Online Training</h4>
+          <p>Start from 14th Jan 2025 | Sun: 10:00 AM to 1:00 PM</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- training -->
+    <section>
+      <div class="train">
+        <h2 class="traning-title">Training</h2>
+        <div class="training">
+          <div class="video1">
+            <video width="640" height="360" autoplay loop muted playsinline>
+              <source
+                src="./video/3205618-hd_1920_1080_25fps.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+          <div class="video2">
+            <video width="640" height="360" autoplay loop muted playsinline>
+              <source
+                src="./video/8716429-uhd_3840_2160_25fps.mp4"
+                autoplay
+                loop
+                muted
+                playsinline
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ouor palced student -->
+    <section>
+      <div class="place-stud">
+        <h2 id="name">OUR PLACED STUDENT</h2>
+        <div class="placement">
+          <img src="./image/pexels-olly-789822.jpg" alt="" />
+          <h2 class="placement-name">Jelene Vicsovic Adams Velga</h2>
+          <h3 class="placement-company">EV Software</h3>
+          <h3 class="placement-country">Ireland</h3>
+        </div>
+
+        <div class="placement">
+          <img src="./image/pexels-olly-3807755.jpg" alt="" />
+          <h2 class="placement-name">Markus Elbert</h2>
+          <h3 class="placement-company">Nexa Solutions</h3>
+          <h3 class="placement-country">Germany</h3>
+        </div>
+
+        <div class="placement">
+          <img src="./image/pexels-olly-3762800.jpg" alt="" />
+          <h2 class="placement-name">Sophia Martins</h2>
+          <h3 class="placement-company">CloudZilla</h3>
+          <h3 class="placement-country">Portugal</h3>
+        </div>
+
+        <div class="placement">
+          <img src="./image/pexels-julia-m-cameron-4144096.jpg" alt="" />
+          <h2 class="placement-name">Aditya Ramesh</h2>
+          <h3 class="placement-company">CoreTech Systems</h3>
+          <h3 class="placement-country">India</h3>
+        </div>
+
+        <div class="placement">
+          <img src="./image/pexels-george-dolgikh-551816-1326947.jpg" alt="" />
+          <h2 class="placement-name">Fatima El-Amin</h2>
+          <h3 class="placement-company">QubitX Labs</h3>
+          <h3 class="placement-country">UAE</h3>
+        </div>
+
+        <div class="placement">
+          <img src="./image/pexels-george-dolgikh-551816-1326946.jpg" alt="" />
+          <h2 class="placement-name">Lucas Novak</h2>
+          <h3 class="placement-company">Innovatech AI</h3>
+          <h3 class="placement-country">Poland</h3>
+        </div>
+
+        <div class="placement">
+          <img src="./image/pexels-olly-3807755.jpg" alt="" />
+          <h2 class="placement-name">Hiroshi Takeda</h2>
+          <h3 class="placement-company">Zenbit Software</h3>
+          <h3 class="placement-country">Japan</h3>
+        </div>
+
+        <div class="placement">
+          <img src="./image/pexels-julia-m-cameron-4144096.jpg" alt="" />
+          <h2 class="placement-name">Maria Gonzalez</h2>
+          <h3 class="placement-company">Digibyte Inc.</h3>
+          <h3 class="placement-country">Spain</h3>
+        </div>
+
+        <div class="placement">
+          <img src="./image/pexels-timur-weber-8560024.jpg" alt="" />
+          <h2 class="placement-name">Amara Ndlovu</h2>
+          <h3 class="placement-company">Delta Webworks</h3>
+          <h3 class="placement-country">South Africa</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- conatact us -->
+    <section>
+      <div class="contact-container">
+        <h1>CONTACT US</h1>
+        <form class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="contact-name" placeholder="Enter Name" />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter Email" />
+
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" placeholder="Enter Number" />
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="Subject" />
+
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Message"></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <h2 class="footer-title">Vijeera HR Academy</h2>
+        <p>Empowering Careers. Building Professionals.</p>
+
+        <div class="footer-social">
+          <a href="#"><img src="./image/2553054_facebook_fb_feed_like_media_icon.png" alt="Facebook" /></a>
+          <a href="#"><img src="./image/2553065_feed_media_news_social_twitter_icon.png" alt="Twitter" /></a>
+          <a href="#"><img src="./image/5282542_linkedin_network_social network_linkedin logo_icon.png" alt="LinkedIn" /></a>
+          <a href="#"><img src="./image/2553060_feed_instagram_media_news_photo_icon.png" alt="Instagram" /></a>
+        </div>
+
+        <p class="footer-copy">
+          &copy; 2025 Vijeera HR Academy. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
